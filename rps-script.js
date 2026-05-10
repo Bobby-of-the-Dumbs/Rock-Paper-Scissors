@@ -8,8 +8,6 @@ function getComputerChoice(){
     }
     else {
         return "Paper"
-    }
-    
-    
+    }  
 }
-
+console.log(getComputerChoice)
