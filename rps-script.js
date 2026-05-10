@@ -1,13 +1,26 @@
 function getComputerChoice(){
-    if (Math.random() % 2 === 0) {
+    if (Math.floor(Math.random()* (4-1)+ 1) >= 3) {
         return "Rock"
 
     }
-    else if (Math.random() % 3 || 5 === 0) {
+    else if(Math.floor(Math.random() * (4-1) +1 )>= 2) {
        return "Scissors" 
     }
-    else {
+    else if(Math.floor(Math.random() *(4-1)+1) >= 1) {
         return "Paper"
-    }  
-}
-console.log(getComputerChoice)
+    } ; 
+};
+function getHumanChoice(input) {
+    input = prompt("Rock, Paper, Scissors! Please pick one of the 3 ").toUpperCase()
+    if (input === "ROCK" & getComputerChoice() === "Rock") {
+        console.log("Tie");
+    }
+    else if (input === "ROCK" & getComputerChoice()=== "Scissors") {
+        console.log("You win")
+    }
+};
+
+
+
+console.log(getComputerChoice());
+
